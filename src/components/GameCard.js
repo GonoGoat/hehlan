@@ -66,13 +66,13 @@ function GameCard(props) {
           </CardContent>
         </CardActionArea>
         <Divider light />
-        <CardActions className={styles.cardActions}>
+        {/*<CardActions className={styles.cardActions}>
           <div className={styles.actions}>
-            <Button size="small" color="secondary" onClick={handleOpen}>
+            <a color="secondary" onClick={handleOpen}>
               Lire la charte
-            </Button>
+            </a>
           </div>
-        </CardActions>
+        </CardActions>*/}
       </Card>
       <MyDialog
         open={open}

@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 import ImageGallery from './ImageGallery';
 
-const photos = _.times(97, n => ({
+const photos = _.times(93, n => ({
   id: `${n}`,
   src: 'assets/img/pictures/' + `${n + 1}).jpg`,
   width: 4,

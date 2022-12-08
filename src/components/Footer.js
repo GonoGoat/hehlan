@@ -36,17 +36,17 @@ function Footer(props) {
         <footer className={styles.footer}>
           <Container maxWidth="sm" className={styles.container}>
             <div className={styles.footerText}>
-              <Typography component="p" align="center" variant="h6">
+              <Typography component="p" align="center" variant="h7">
                 Copyright &copy; {new Date().getFullYear()} &mdash; <a href="#">HEH LAN</a>
               </Typography>
-              <Typography component="p" align="center" variant="h6">
+              {/*<Typography component="p" align="center" variant="h7">
                 Contact via <a href="mailto:contact@hehlan.be">contact@hehlan.be</a>
-              </Typography>
+              </Typography>*/}
             </div>
             <a href="https://www.heh.be/" rel="noreferrer" target="_blank" className={styles.footerLink}>
               <img
                 src="assets/logos/heh-full.png"
-                width="167.75"
+                width="230"
                 height="83"
                 className={styles.logo}
                 alt="logo"

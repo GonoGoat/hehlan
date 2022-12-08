@@ -67,18 +67,17 @@ function Navbar(props) {
           <Link to="/" className={styles.itemLink}>
             Accueil
           </Link>
-          <a target='_blank' rel="noreferrer" href="https://docs.google.com/spreadsheets/d/1XUrxXMh2QxRR81ZXRCZXn8Cl1lQ5iNtWk_6lL2J5g7o/edit#gid=0" className={styles.itemLink}>
+          {/*<a target='_blank' rel="noreferrer" href="https://docs.google.com/spreadsheets/d/1XUrxXMh2QxRR81ZXRCZXn8Cl1lQ5iNtWk_6lL2J5g7o/edit#gid=0" className={styles.itemLink}>
             Planning
-          </a>
+          </a>*/}
           <Link to="/gallery" className={styles.itemLink}>
             Galerie
           </Link>
-          <SportsEsportsIcon className={styles.divider} />
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5J1fNpDI2XcVdMxUmV5H9hqnQbxlpx9b2NwNrNP_-UCJzJg/viewform" target='_blank' rel="noreferrer">
+          {/*<a href="https://docs.google.com/forms/d/e/1FAIpQLSe5J1fNpDI2XcVdMxUmV5H9hqnQbxlpx9b2NwNrNP_-UCJzJg/viewform" target='_blank' rel="noreferrer">
             <Button size="large" color="secondary">
               S'inscrire
             </Button>
-          </a>
+          </a>*/}
         </nav>
       </Toolbar>
     </AppBar>

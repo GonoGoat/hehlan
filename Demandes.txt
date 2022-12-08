@@ -1,0 +1,2 @@
+///Bannières///
+Rendre plus smooth la transition entre la bannière et l'arriere plan du site (bordure noire?)

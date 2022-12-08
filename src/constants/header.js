@@ -3,8 +3,11 @@ import pink from '@material-ui/core/colors/pink';
 
 export const subtitle = (
   <div>
-    La HEH LAN revient pour une <strong style={{ color: pink[500] }}>10<sup>ème</sup> édition</strong> avec plus de cadeaux et de nouveautés !
-    {/* Les inscriptions sont d'ores et déjà <strong style={{ color: pink[500] }}>ouvertes</strong>. */}
+      <center>
+      La HEH LAN revient pour une <strong style={{ color: pink[500] }}>11<sup>ème</sup> édition</strong> !<br/>
+      Du vendredi 31 mars, au dimanche 2 avril !
+      {/* Les inscriptions sont d'ores et déjà <strong style={{ color: pink[500] }}>ouvertes</strong>. */}
+      </center>
   </div>
 );
 

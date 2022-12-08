@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 export const internalRules = {
-  title: "Règlement temporaire d'ordre intérieur",
-  content: (
+  //title: "Règlement temporaire d'ordre intérieur",
+  /*content: (
     <div>
       <h3>1. Description de l'évènement</h3>
       La HEH LAN 2022 est une LAN party, soit un évènement visant à rassembler un grand nombre de
@@ -298,5 +298,5 @@ export const internalRules = {
       que lorsqu'elles seront sur le site web.
     </div>
   ),
-  close: 'Fermer',
+  close: 'Fermer',*/
 };

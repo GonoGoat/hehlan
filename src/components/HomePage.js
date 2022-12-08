@@ -98,12 +98,10 @@ function HomePage() {
   return (
     <div className={styles.root}>
       <Alert severity="info">
-        <AlertTitle>Dispositions liées au Coronavirus</AlertTitle>
+        <AlertTitle>Site en cours de développement !</AlertTitle>
         <div>
-          Nous vous tiendrons informé des mesures qui seront prises — plus d'informations sur notre page&nbsp;
-          <a href="https://www.facebook.com/hehlan" target="_blank" rel="noreferrer">
-            Facebook
-          </a>
+          Le site est régulierement mis à jour et les différentes
+          fonctionnalités (Inscriptions, etc.) viendront au fer et à mesure !
         </div>
       </Alert>
       <MyDialog
@@ -130,8 +128,6 @@ function HomePage() {
             <Fade in={true} key={game.title} timeout={(index + 1) * 1000}>
               <Grid item xs={12} sm={6} md={4}>
                 <GameCard
-                  chart={game.chart}
-                  chartTitle={'Charte temporaire de ' + game.title}
                   description={game.description}
                   file={game.file}
                   picture={game.picture}
@@ -141,14 +137,14 @@ function HomePage() {
             </Fade>
           ))}
         </Grid>
-        <Typography align="center">
+        {/*<Typography align="center">
           Notez que chaque participant est soumis aux différents chartes, ainsi qu'au
           <Button color="secondary" className={styles.button} onClick={handleChartOpen}>
             règlement d'ordre intérieur.
           </Button>
-        </Typography>
+        </Typography>*/}
       </div>
-      <div className={styles.whiteSection}>
+      {/*<div className={styles.whiteSection}>
         <Typography
           align="center"
           className={styles.mainTitle}
@@ -182,10 +178,10 @@ function HomePage() {
                 </Typography>
               </Grid>
             </Grid>
-            {/* <Typography color="textSecondary" variant="body2" gutterBottom>
+              <Typography color="textSecondary" variant="body2" gutterBottom>
                 Les inscriptions étant ouvertes, vous avez l'opportunité de sélectionner le(s)
                 tournoi(s) auquel(s) vous souhaitez vous inscrire.
-                </Typography> */}
+                </Typography>
             <Typography color="textSecondary" variant="body2" gutterBottom>
               Les inscriptions sont fermées.
             </Typography>
@@ -205,20 +201,20 @@ function HomePage() {
             </Typography>
           </div>
           <div className={styles.section3}>
-            {/* <Button size="large" color="secondary" onClick={this.handleSignUpOpen}>
+             <Button size="large" color="secondary" onClick={this.handleSignUpOpen}>
                 S'inscrire
-                </Button> */}
-            {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5J1fNpDI2XcVdMxUmV5H9hqnQbxlpx9b2NwNrNP_-UCJzJg/viewform" target='_blank'> */}
+                </Button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5J1fNpDI2XcVdMxUmV5H9hqnQbxlpx9b2NwNrNP_-UCJzJg/viewform" target='_blank'>
             <Button size="large" color="secondary" disabled={true}>
               S'inscrire
             </Button>
-            {/* </a> */}
+            </a>
           </div>
         </Paper>
         <Typography align="center" gutterBottom variant="h5">
           Les places sont limitées !
         </Typography>
-      </div>
+      </div>*/}
       <div className={styles.greySection}>
         <Typography
           align="center"
@@ -239,7 +235,7 @@ function HomePage() {
           ))}
         </Grid>
       </div>
-      <div className={styles.whiteSection}>
+      {/*<div className={styles.whiteSection}>
         <Typography
           align="center"
           className={styles.mainTitle}
@@ -255,14 +251,14 @@ function HomePage() {
         </Typography>
         <Gallery photos={sponsors} />
 
-        {/* <Grid container alignItems="center" justify="space-evenly">
+        { <Grid container alignItems="center" justify="space-evenly">
             {sponsors.map((sponsor: any, index: number) => (
             <Fade in={true} key={sponsor.name} timeout={(index + 1) * 1000}>
             <img src={sponsor.img} alt={sponsor.name} width="100" height="100" />
             </Fade>
             ))}
-            </Grid> */}
-      </div>
+            </Grid>
+      </div>*/}
     </div>
   );
 }

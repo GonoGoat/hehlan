@@ -30,12 +30,13 @@ export const faqPosts = [
     title: "Quand s'y rendre ?",
     content: (
       <div>
-        Généralement le week-end précédent les vacances de Pâques,{' '}
-        <strong>du vendredi 1 avril à 18h, au dimanche 3 avril à 13h</strong>.
+        Le week-end précédent les vacances de Pâques,{' '}
+        <strong>du vendredi 31 avril, au dimanche 2 avril </strong>.<br/>
+        (Planning en cours de réalisation)
       </div>
     ),
   },
-  {
+  /*{
     icon: <CardTravelIcon style={{ color: pink[500], fontSize: 50 }} />,
     title: 'Que dois-je apporter ?',
     content: (
@@ -50,7 +51,7 @@ export const faqPosts = [
         </div>
       </div>
     ),
-  },
+  },*/
   {
     icon: <PeopleIcon style={{ color: pink[500], fontSize: 50 }} />,
     title: "Peut-on inviter d'autres personnes ?",
@@ -61,7 +62,7 @@ export const faqPosts = [
       </div>
     ),
   },
-  {
+  /*{
     icon: <FastfoodIcon style={{ color: pink[500], fontSize: 50 }} />,
     title: 'Y aura-t-il un stand de nourriture ?',
     content: (
@@ -71,8 +72,8 @@ export const faqPosts = [
         Attention que l'apport d'<strong>alcool</strong> est <strong> interdit.</strong>
       </div>
     ),
-  },
-  {
+  },*/
+  /*{
     icon: <HotelIcon style={{ color: pink[500], fontSize: 50 }} />,
     title: 'Peut-on y rester pour dormir ?',
     content: (
@@ -81,5 +82,5 @@ export const faqPosts = [
         transformées en dortoir afin que les participants puissent s'y reposer.
       </div>
     ),
-  },
+  },*/
 ];
