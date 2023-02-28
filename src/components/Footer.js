@@ -39,9 +39,9 @@ function Footer(props) {
               <Typography component="p" align="center" variant="h7">
                 Copyright &copy; {new Date().getFullYear()} &mdash; <a href="#">HEH LAN</a>
               </Typography>
-              {/*<Typography component="p" align="center" variant="h7">
-                Contact via <a href="mailto:contact@hehlan.be">contact@hehlan.be</a>
-              </Typography>*/}
+              <Typography component="p" align="center" variant="h7">
+                Contact via <a href="mailto:heh.lan.2023@gmail.com">heh.lan.2023@gmail.com</a>
+              </Typography>
             </div>
             <a href="https://www.heh.be/" rel="noreferrer" target="_blank" className={styles.footerLink}>
               <img

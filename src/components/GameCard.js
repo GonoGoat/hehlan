@@ -66,22 +66,24 @@ function GameCard(props) {
           </CardContent>
         </CardActionArea>
         <Divider light />
-        {/*<CardActions className={styles.cardActions}>
-          <div className={styles.actions}>
-            <a color="secondary" onClick={handleOpen}>
-              Lire la charte
+        <CardActions className={styles.cardActions}>
+          <div>
+            <a href="../assets/charts/ReglementTournois.pdf" target='_blank'>
+            <Button className={styles.actions} color="secondary">
+            Lire le règlement des tournois
+            </Button>
             </a>
           </div>
-        </CardActions>*/}
+        </CardActions>
       </Card>
-      <MyDialog
+      {/*<MyDialog
         open={open}
         file={props.file}
         onClose={handleClose}
         title={props.chartTitle}
         content={props.chart}
         close={'Fermer'}
-      />
+      />*/}
     </div>
   );
 }

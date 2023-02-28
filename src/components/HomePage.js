@@ -19,6 +19,7 @@ import Gallery from 'react-photo-gallery';
 
 import FaqCard from './FaqCard';
 import GameCard from './GameCard';
+import SponsorCard from './SponsorCard';
 import Header from './Header';
 import MyDialog from './MyDialog';
 
@@ -79,7 +80,7 @@ function HomePage() {
 
   const styles = useStyles();
 
-  function getSteps() {
+  /*function getSteps() {
     return ["S'inscrire", 'Rejoindre une équipe', 'Payer'];
   };
 
@@ -91,27 +92,26 @@ function HomePage() {
     setOpenChart(false);
   };
 
-  /*function handleSignUpOpen() {
+  function handleSignUpOpen() {
     window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSe5J1fNpDI2XcVdMxUmV5H9hqnQbxlpx9b2NwNrNP_-UCJzJg/viewform';
   };*/
 
   return (
     <div className={styles.root}>
       <Alert severity="info">
-        <AlertTitle>Site en cours de développement !</AlertTitle>
+        <AlertTitle>Inscriptions ouvertes !</AlertTitle>
         <div>
-          Le site est régulierement mis à jour et les différentes
-          fonctionnalités (Inscriptions, etc.) viendront au fer et à mesure !
+          Les inscriptions seront ouvertes du 1 février au 10 mars.
         </div>
       </Alert>
-      <MyDialog
+      {/*<MyDialog
         close={internalRules.close}
         content={internalRules.content}
         file="assets/charts/internalRules.pdf"
         onClose={handleChartClose}
         open={openChart}
         title={internalRules.title}
-      />
+      />*/}
       <Header title={title} subtitle={subtitle} />
       <div className={styles.greySection}>
         <Typography
@@ -137,14 +137,24 @@ function HomePage() {
             </Fade>
           ))}
         </Grid>
-        {/*<Typography align="center">
-          Notez que chaque participant est soumis aux différents chartes, ainsi qu'au
-          <Button color="secondary" className={styles.button} onClick={handleChartOpen}>
-            règlement d'ordre intérieur.
-          </Button>
-        </Typography>*/}
+        <Typography align="center">
+          Notez que chaque participant est soumis aux différentes chartes, au
+          <a href="../assets/charts/ReglementOrdreInterieurHEHLan.pdf" target='_blank'>
+            <Button color="secondary" className={styles.button}>
+            règlement d'ordre intérieur
+            </Button>
+          </a>
+          <br/>
+          ainsi qu'à l'
+          <a href="../assets/charts/Autorisation_parentale.pdf" target='_blank'>
+            <Button color="secondary" className={styles.button}>
+            autorisation parentale
+            </Button>
+          </a>
+          si le participant est mineur.
+        </Typography>
       </div>
-      {/*<div className={styles.whiteSection}>
+      <div className={styles.whiteSection}>
         <Typography
           align="center"
           className={styles.mainTitle}
@@ -152,18 +162,18 @@ function HomePage() {
           gutterBottom
           variant="h4"
         >
-          Comment s'inscrire ?
+          S'inscrire
         </Typography>
-        <Typography align="center" gutterBottom variant="h6">
+        {/*<Typography align="center" gutterBottom variant="h6">
           Les inscriptions se font principalement en <strong>3 étapes</strong> :
-        </Typography>
-        <Stepper activeStep={0} alternativeLabel>
+          </Typography>*/}
+        {/*<Stepper activeStep={0} alternativeLabel>
           {getSteps().map((label) => (
             <Step key={label}>
               <StepLabel>{label}</StepLabel>
             </Step>
           ))}
-        </Stepper>
+        </Stepper>*/}
         <Paper className={styles.rootInscription}>
           <div className={styles.section1}>
             <Grid container alignItems="center">
@@ -174,38 +184,35 @@ function HomePage() {
               </Grid>
               <Grid item>
                 <Typography gutterBottom variant="h6">
-                  8 €
+                  10 €
                 </Typography>
               </Grid>
             </Grid>
-              <Typography color="textSecondary" variant="body2" gutterBottom>
-                Les inscriptions étant ouvertes, vous avez l'opportunité de sélectionner le(s)
-                tournoi(s) auquel(s) vous souhaitez vous inscrire.
-                </Typography>
             <Typography color="textSecondary" variant="body2" gutterBottom>
+              Les inscriptions étant ouvertes, vous avez l'opportunité de sélectionner le(s)
+              tournoi(s) auquel(s) vous souhaitez vous inscrire et de choisir votre/vos équipe(s)
+              </Typography>
+            {/*<Typography color="textSecondary" variant="body2" gutterBottom>
               Les inscriptions sont fermées.
             </Typography>
             <Typography color="textSecondary" variant="body2">
               Pour les joueurs désirant compléter une équipe,
               contactez-nous sur notre page Facebook !
-            </Typography>
-            <br />
+            </Typography>*/}
+            <br/>
             <Typography color="textSecondary">
-              <strong>ATTENTION :</strong> 20 euros si paiement effectué sur place.
+              <strong>ATTENTION :</strong> Pas de paiement sur place !
             </Typography>
           </div>
           <Divider variant="middle" />
-          <div className={styles.section2}>
+          {/*<div className={styles.section2}>
             <Typography variant="body1">
               Status : <strong className={styles.inscriptionStatus}>Fermées</strong>
             </Typography>
-          </div>
+          </div>*/}
           <div className={styles.section3}>
-             <Button size="large" color="secondary" onClick={this.handleSignUpOpen}>
-                S'inscrire
-                </Button>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5J1fNpDI2XcVdMxUmV5H9hqnQbxlpx9b2NwNrNP_-UCJzJg/viewform" target='_blank'>
-            <Button size="large" color="secondary" disabled={true}>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd82xwovRPRVZslOhu5ZGfiyVRv4CiVzuNA_fJUS73Ne_Fj8Q/viewform" target='_blank'>
+            <Button size="large" color="secondary">
               S'inscrire
             </Button>
             </a>
@@ -214,7 +221,7 @@ function HomePage() {
         <Typography align="center" gutterBottom variant="h5">
           Les places sont limitées !
         </Typography>
-      </div>*/}
+      </div>
       <div className={styles.greySection}>
         <Typography
           align="center"
@@ -235,7 +242,7 @@ function HomePage() {
           ))}
         </Grid>
       </div>
-      {/*<div className={styles.whiteSection}>
+      <div className={styles.whiteSection}>
         <Typography
           align="center"
           className={styles.mainTitle}
@@ -246,19 +253,30 @@ function HomePage() {
           Sponsors
         </Typography>
         <Typography align="center" gutterBottom variant="h6">
-          <strong>Merci à nos sponsors</strong>, sans leur aide la HEH LAN ne serait pas possible
-          :
+          <strong>Merci à nos sponsors</strong>, sans leur aide la HEH LAN ne serait pas possible :
         </Typography>
-        <Gallery photos={sponsors} />
+        {/*<Gallery photos={sponsors} />
 
-        { <Grid container alignItems="center" justify="space-evenly">
+          <Grid container alignItems="center" justify="space-evenly">
             {sponsors.map((sponsor: any, index: number) => (
             <Fade in={true} key={sponsor.name} timeout={(index + 1) * 1000}>
             <img src={sponsor.img} alt={sponsor.name} width="100" height="100" />
             </Fade>
             ))}
-            </Grid>
-      </div>*/}
+            </Grid>*/}
+          <Grid container alignItems="center" justify="space-evenly">
+          {sponsors.map((sponsor, index) => (
+              <Fade in={true} key={sponsor.name} timeout={(index + 1) * 1000}>
+              <Grid item xs={12} sm={6} md={4}>
+                <SponsorCard
+                  lien={sponsor.lien}
+                  picture={sponsor.picture}
+                />
+              </Grid>
+              </Fade>
+          ))}
+          </Grid>
+      </div>
     </div>
   );
 }

@@ -73,11 +73,11 @@ function Navbar(props) {
           <Link to="/gallery" className={styles.itemLink}>
             Galerie
           </Link>
-          {/*<a href="https://docs.google.com/forms/d/e/1FAIpQLSe5J1fNpDI2XcVdMxUmV5H9hqnQbxlpx9b2NwNrNP_-UCJzJg/viewform" target='_blank' rel="noreferrer">
-            <Button size="large" color="secondary">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd82xwovRPRVZslOhu5ZGfiyVRv4CiVzuNA_fJUS73Ne_Fj8Q/viewform" target='_blank' rel="noreferrer">
+            <Button size="medium" color="secondary">
               S'inscrire
             </Button>
-          </a>*/}
+          </a>
         </nav>
       </Toolbar>
     </AppBar>

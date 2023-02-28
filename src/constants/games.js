@@ -5,7 +5,7 @@ export const games = [
     title: 'Multiversus',
     picture: "../assets/img/games/multiversus.png",
     description: `Choisissez votre personnage favoris et affrontez votre adversaire !`,
-    //file: "../assets/charts/multiVersusChart.pdf",
+    file: "../assets/charts/ReglementTournois.pdf",
   },
   {
     picture: "/assets/img/games/lol.png",
@@ -36,19 +36,19 @@ export const games = [
         </p>
       </div>
     ),*/
-    //file: "../assets/charts/lolChart.pdf",
+    file: "../assets/charts/ReglementTournois.pdf",
   },
   {
     title: 'Team Fight Tactics',
     picture: "../assets/img/games/TFT.png",
     description: `Soyez plus malin que vos adversaires et adaptez votre stratégie !`,
-    //file: "../assets/charts/TFTChart.pdf",
+    file: "../assets/charts/ReglementTournois.pdf",
   },
   {
     picture: "../assets/img/games/rocket-league.png",
     title: 'Rocket League (3v3)',
     description: `Une seule erreur et cela peut vous coûter la victoire. Montrez
   qui sont les véritables champions sur le terrain !`,
-    //file: "../assets/charts/rocketLeagueChart.pdf",
+    file: "../assets/charts/ReglementTournois.pdf",
   },
 ];

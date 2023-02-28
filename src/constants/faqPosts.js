@@ -31,7 +31,7 @@ export const faqPosts = [
     content: (
       <div>
         Le week-end précédent les vacances de Pâques,{' '}
-        <strong>du vendredi 31 avril, au dimanche 2 avril </strong>.<br/>
+        <strong>du vendredi 31 mars, au dimanche 2 avril </strong>.<br/>
         (Planning en cours de réalisation)
       </div>
     ),
@@ -73,7 +73,7 @@ export const faqPosts = [
       </div>
     ),
   },*/
-  /*{
+  {
     icon: <HotelIcon style={{ color: pink[500], fontSize: 50 }} />,
     title: 'Peut-on y rester pour dormir ?',
     content: (
@@ -82,5 +82,5 @@ export const faqPosts = [
         transformées en dortoir afin que les participants puissent s'y reposer.
       </div>
     ),
-  },*/
+  },
 ];
